@@ -1,8 +1,8 @@
-Hey {!! $user->display_name !!}!
+Olá {!! $user->display_name !!}!
 
-{!! $blueprint->discussion->user->display_name !!} made a discussion in a tag you're following: {!! $blueprint->discussion->title !!}
+{!! $blueprint->discussion->user->display_name !!} criou uma discussão em uma tag que você está seguindo: {!! $blueprint->discussion->title !!}
 
-To view the new discussion, check out the following link:
+Para ver a nova discussão, confira o seguinte link:
 {!! app()->url() !!}/d/{!! $blueprint->discussion->id !!}
 
 ---

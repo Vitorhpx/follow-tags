@@ -1,8 +1,9 @@
-Hey {!! $user->display_name !!}!
+Olá {!! $user->display_name !!}!
 
-{!! $blueprint->post->user->display_name !!} made a post in a discussion on a tag you're following: {!! $blueprint->post->discussion->title !!}
 
-To view the new activity, check out the following link:
+{!! $blueprint->post->user->display_name !!} fez uma publicação em uma discussão de tag que você está seguindo: {!! $blueprint->post->discussion->title !!}
+
+Para ver a nova atividade, confira o seguinte link:
 {!! app()->url() !!}/d/{!! $blueprint->post->discussion_id !!}/{!! $blueprint->post->number !!}
 
 ---
@@ -11,4 +12,4 @@ To view the new activity, check out the following link:
 
 ---
 
-You won't receive any more notifications about this discussion until you're up-to-date.
+Você não receberá nenhuma outra notificação desta discussão até estar atualizado.
